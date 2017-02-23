@@ -1,0 +1,205 @@
+html{
+	box-sizing: border-box;
+}
+
+*,*:before, *:after{
+	box-sizing: inherit;
+}
+div{
+	margin: 0px;
+}
+body,html{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: rgba(241,241,241,1);
+}
+
+#page-wrap{
+	width: 80%;
+	margin: auto;
+	background-color: white;
+}
+
+#top{
+	height: 100px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.28);
+    margin-bottom: 10px;
+}
+.inputRow{
+	position: relative;
+    top: 38px;
+    left: calc(50% - 207px);
+    width: 414px;
+}
+.inputRow label{
+	width: 50%;
+    float: left;
+    font-size: 1.7em;
+}
+.inputRow input{
+	width: 50%;
+	height: 37px;
+}
+#middle{
+	box-shadow: 0 0 8px rgba(0,0,0,0.28);
+	min-height: 200px;
+}
+
+#bottom{
+	margin-top: 10px;
+	padding: 25px 0px;
+	height: 100px;
+	box-shadow: 0 0 8px rgba(0,0,0,0.28);
+}
+
+
+#header{
+	position: relative;
+	height: 64px;
+	padding: 5px;
+}
+
+.add{
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	left: calc(50% - 32px);
+}
+
+.pageTitle{
+	font-size: -webkit-xxx-large;
+	padding-left: 10px;
+}
+
+
+#folder{
+	width: 100%;
+	margin-top: 10px;
+
+}
+.col-5{
+	width: 25%;
+	height: 200px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.album{
+	position: relative;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	
+}
+
+.albumDesc{
+	padding: 2px;
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	min-height: 50px;
+	background-color: azure;
+	opacity: 0.5;
+}
+#buttonBox{
+	position: relative;
+    width: 352px;
+    left: calc(50% - 176px);
+}
+button{
+	width: 98px;
+    height: 50px;
+    font-size: 2em;
+    box-shadow: 0 0 8px rgba(0,0,0,0.28);
+}
+
+button:first-child{
+	margin-right: 150px;
+}
+
+
+
+#overlay{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 1;
+    top: 0%;
+    left: 0%;
+}
+#popup{	
+	position: absolute;
+    width: 610px;
+    height: 400px;
+    padding: 50px;
+    background: white;
+    top: calc(50% - 200px);
+    left: calc(50% - 305px);
+    z-index: 11;
+
+    box-shadow: 0 0 8px rgba(0,0,0,0.28);
+}
+.row{
+	font-size: -webkit-xxx-large;
+	color: gray;
+	height: 100px;
+	padding: 25px;
+	background-color: transparent;
+}
+
+.row input{
+	width: 310px;
+    height: 50px;
+    float: right;
+    text-overflow: hidden;
+    font-size: 25px;
+}
+
+.row:last-child input{
+	width: 100px;
+}
+
+input[type="submit"]{
+	margin-left: 150px;
+	float: left;
+}
+
+input:hover{
+	box-shadow: 0px 5px 2px rgba(0,0,0,0.15);
+}
+
+#icon{
+	position: absolute;
+	width: 60px;
+	height: 30px;
+	top: 1px;
+	right: 1px;
+	z-index: 3;
+	display: flex;
+}
+
+.edit,.delete{
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+	.col-5{
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 785px) {
+    #page-wrap{
+    	width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+  	.col-5{
+		width: 50%;
+	}
+
+}

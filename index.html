@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Albums</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<script src="./js/jquery-3.1.1.js"></script>
+	<div id="page-wrap">
+
+	</div>
+	<script id="create" type="text/template">
+		<section id="top">
+			<div class="inputRow">
+				<form id="form1">
+				<label for="albumName">Album Name</label>
+				<input id="albumName" type="text" value = "" required />
+				</form>			
+			</div>
+		</section>
+		<section id="middle">
+			<div id="header">
+				<span class="pageTitle">Photos</span>
+				<img title="Add photo" class="add" src="./images/add-button.svg">
+			</div>
+			<div id="folder">
+				
+			</div>
+		</section>
+		<section id="bottom">
+			<div id="buttonBox">
+				<button type="submit" form="form1" value="Save">Save</button>
+				<button type="reset" form="form1" value="Back">Back</button>
+			</div>
+		</section>
+	</script>
+	<script id="firstPage" type="text/template">
+		<div id="middle">
+			<div id="header">
+				<span class="pageTitle">Albums</span>
+				<a href = "#albums/create"><img title="Add Album" class="add" src="./images/add-button.svg"></a>
+			</div>
+			<hr/>
+			<div id="folder">
+			</div>
+		</div>
+	</script>
+	<script id="imgTemp" type="text/template">
+		<div class="col-5">
+			<div class="album">
+				<div inside="album" id="icon">
+					<img class="edit" src="./images/edit-button.svg" width="30px" height="30px">
+					<img class="delete" src="./images/1485617099_remove-80px.svg" width="30px" height="30px">
+				</div>
+				<img class="original" width="100%" height="100%" />
+				<div class="albumDesc">
+					<span class="title"></span>
+					<span></span>
+				</div>
+			</div>				
+		</div>
+	</script>
+	<script id="popWindow" type="text/template">
+		<div id="overlay">
+			<div id="popup">
+				<form id="popupForm">
+					<div class="row">
+						<label for="photoName">Name</label>
+						<input id="photoName" type="text"/>
+					</div>
+					<div class="row">
+						<label for="url" ="photoName">Url</label>
+						<input id="url" type="url"/>
+					</div>					
+					<div class="row">
+						 <input type="submit" value="Apply"/>
+						<input type="reset" value="Back"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
